@@ -59,12 +59,28 @@
                                                 <constraint firstAttribute="height" constant="30" id="lFQ-LR-5K3"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgk-tu-soX">
+                                            <rect key="frame" x="43" y="7" width="31" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.18431372549019609" green="0.75294117647058822" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0K-Oe-fK3">
+                                            <rect key="frame" x="43" y="25.5" width="26.5" height="12"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <color key="textColor" red="0.69411764705882351" green="0.69411764705882351" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
                                 <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="cgk-tu-soX" firstAttribute="leading" secondItem="0kH-cd-vYM" secondAttribute="trailing" constant="8" id="Tme-SK-hae"/>
+                                    <constraint firstItem="cgk-tu-soX" firstAttribute="top" secondItem="0kH-cd-vYM" secondAttribute="top" id="Wlu-EY-CEY"/>
                                     <constraint firstItem="0kH-cd-vYM" firstAttribute="top" secondItem="CAH-dO-f53" secondAttribute="top" constant="7" id="aZV-E1-bnY"/>
+                                    <constraint firstItem="a0K-Oe-fK3" firstAttribute="leading" secondItem="0kH-cd-vYM" secondAttribute="trailing" constant="8" id="bxG-Hh-HbJ"/>
                                     <constraint firstItem="0kH-cd-vYM" firstAttribute="leading" secondItem="CAH-dO-f53" secondAttribute="leading" constant="5" id="c1n-Ar-jhS"/>
+                                    <constraint firstItem="a0K-Oe-fK3" firstAttribute="top" secondItem="cgk-tu-soX" secondAttribute="bottom" constant="4" id="yxF-sK-1hv"/>
                                 </constraints>
                             </collectionViewCell>
                         </cells>
