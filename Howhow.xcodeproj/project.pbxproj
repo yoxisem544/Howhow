@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		63499DC11DBB453E00D9FCDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63499DC01DBB453E00D9FCDD /* AppDelegate.swift */; };
-		63499DC31DBB453E00D9FCDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63499DC21DBB453E00D9FCDD /* ViewController.swift */; };
 		63499DC61DBB453E00D9FCDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63499DC41DBB453E00D9FCDD /* Main.storyboard */; };
 		63499DC81DBB453E00D9FCDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63499DC71DBB453E00D9FCDD /* Assets.xcassets */; };
 		63499DCB1DBB453E00D9FCDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63499DC91DBB453E00D9FCDD /* LaunchScreen.storyboard */; };
 		63499DD61DBB453F00D9FCDD /* HowhowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63499DD51DBB453F00D9FCDD /* HowhowTests.swift */; };
 		63499DE11DBB453F00D9FCDD /* HowhowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63499DE01DBB453F00D9FCDD /* HowhowUITests.swift */; };
+		63BBE5FC1DBC6F2C00478554 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BBE5FB1DBC6F2C00478554 /* MainCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		63499DBD1DBB453E00D9FCDD /* Howhow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howhow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63499DC01DBB453E00D9FCDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63499DC21DBB453E00D9FCDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63499DC51DBB453E00D9FCDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63499DC71DBB453E00D9FCDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63499DCA1DBB453E00D9FCDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		63499DDC1DBB453F00D9FCDD /* HowhowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HowhowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63499DE01DBB453F00D9FCDD /* HowhowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowhowUITests.swift; sourceTree = "<group>"; };
 		63499DE21DBB453F00D9FCDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63BBE5FB1DBC6F2C00478554 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 		63499DBF1DBB453E00D9FCDD /* Howhow */ = {
 			isa = PBXGroup;
 			children = (
+				63BBE5FB1DBC6F2C00478554 /* MainCollectionViewController.swift */,
 				63499DC01DBB453E00D9FCDD /* AppDelegate.swift */,
-				63499DC21DBB453E00D9FCDD /* ViewController.swift */,
 				63499DC41DBB453E00D9FCDD /* Main.storyboard */,
 				63499DC71DBB453E00D9FCDD /* Assets.xcassets */,
 				63499DC91DBB453E00D9FCDD /* LaunchScreen.storyboard */,
@@ -259,8 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63499DC31DBB453E00D9FCDD /* ViewController.swift in Sources */,
 				63499DC11DBB453E00D9FCDD /* AppDelegate.swift in Sources */,
+				63BBE5FC1DBC6F2C00478554 /* MainCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +503,7 @@
 				63499DE71DBB453F00D9FCDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63499DE81DBB453F00D9FCDD /* Build configuration list for PBXNativeTarget "HowhowTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +512,7 @@
 				63499DEA1DBB453F00D9FCDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63499DEB1DBB453F00D9FCDD /* Build configuration list for PBXNativeTarget "HowhowUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +521,7 @@
 				63499DED1DBB453F00D9FCDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
