@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		632CB8971DBC8DB4001845F9 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CB8961DBC8DB4001845F9 /* MainCollectionViewCell.swift */; };
 		63499DC11DBB453E00D9FCDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63499DC01DBB453E00D9FCDD /* AppDelegate.swift */; };
 		63499DC61DBB453E00D9FCDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63499DC41DBB453E00D9FCDD /* Main.storyboard */; };
 		63499DC81DBB453E00D9FCDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63499DC71DBB453E00D9FCDD /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		632CB8961DBC8DB4001845F9 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		63499DBD1DBB453E00D9FCDD /* Howhow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howhow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63499DC01DBB453E00D9FCDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63499DC51DBB453E00D9FCDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				63BBE5FB1DBC6F2C00478554 /* MainCollectionViewController.swift */,
 				63499DC01DBB453E00D9FCDD /* AppDelegate.swift */,
 				63499DC41DBB453E00D9FCDD /* Main.storyboard */,
+				632CB8961DBC8DB4001845F9 /* MainCollectionViewCell.swift */,
 				63499DC71DBB453E00D9FCDD /* Assets.xcassets */,
 				63499DC91DBB453E00D9FCDD /* LaunchScreen.storyboard */,
 				63499DCC1DBB453E00D9FCDD /* Info.plist */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63499DC11DBB453E00D9FCDD /* AppDelegate.swift in Sources */,
+				632CB8971DBC8DB4001845F9 /* MainCollectionViewCell.swift in Sources */,
 				63BBE5FC1DBC6F2C00478554 /* MainCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
