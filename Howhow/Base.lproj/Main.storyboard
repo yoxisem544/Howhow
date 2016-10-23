@@ -139,12 +139,20 @@
                                         <color key="textColor" red="0.69411764705882351" green="0.69411764705882351" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieK-eB-XHo">
+                                        <rect key="frame" x="99.5" y="12.5" width="35.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="DTk-iG-4pm"/>
+                                    <constraint firstItem="ieK-eB-XHo" firstAttribute="leading" secondItem="eij-3L-fUT" secondAttribute="trailing" constant="11" id="hCP-ZK-raM"/>
                                     <constraint firstItem="eij-3L-fUT" firstAttribute="leading" secondItem="d7r-gf-zq9" secondAttribute="leading" constant="14" id="nHi-yP-tHd"/>
                                     <constraint firstItem="eij-3L-fUT" firstAttribute="centerY" secondItem="d7r-gf-zq9" secondAttribute="centerY" id="nh7-Mt-hKJ"/>
+                                    <constraint firstItem="ieK-eB-XHo" firstAttribute="centerY" secondItem="eij-3L-fUT" secondAttribute="centerY" id="wwW-Qa-rb6"/>
                                 </constraints>
                             </view>
                         </subviews>
