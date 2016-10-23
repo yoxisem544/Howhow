@@ -13,9 +13,31 @@ private let reuseIdentifier = "Cell"
 class MainCollectionViewController: UICollectionViewController {
 
 	@IBOutlet weak var MainFlowLayout: UICollectionViewFlowLayout!
+	
+	var posts: [PostData] = [PostData(avatarImage: UIImage(named: "Miranda.png")!, username: "Miranda", time: "September 28, 2016 at 14:25", photo: UIImage(named: "demo-01.jpg")!, content: "Lorem ipsum dolor sit amet, consectetuer adipisI elit desco. #demo"),
+	                         PostData(avatarImage: UIImage(named: "Miranda.png")!, username: "Miranda", time: "September 28, 2016 at 14:25", photo: UIImage(named: "demo-02.jpg")!, content: "Lorem ipsum dolor sit amet, consectetuer adipisI elit desco. #demo"),
+	                         PostData(avatarImage: UIImage(named: "Miranda.png")!, username: "Miranda", time: "September 28, 2016 at 14:25", photo: UIImage(named: "demo-03.jpg")!, content: "Lorem ipsum dolor sit amet, consectetuer adipisI elit desco. #demo"),
+	                         PostData(avatarImage: UIImage(named: "Miranda.png")!, username: "Miranda", time: "September 28, 2016 at 14:25", photo: UIImage(named: "demo-04.jpg")!, content: "Lorem ipsum dolor sit amet, consectetuer adipisI elit desco. #demo"),
+	                         PostData(avatarImage: UIImage(named: "Miranda.png")!, username: "Miranda", time: "September 28, 2016 at 14:25", photo: UIImage(named: "demo-05.jpg")!, content: "Lorem ipsum dolor sit amet, consectetuer adipisI elit desco. #demo"),
+	                         PostData(avatarImage: UIImage(named: "Miranda.png")!, username: "Miranda", time: "September 28, 2016 at 14:25", photo: UIImage(named: "demo-06.jpg")!, content: "Lorem ipsum dolor sit amet, consectetuer adipisI elit desco. #demo"),
+	                         PostData(avatarImage: UIImage(named: "Miranda.png")!, username: "Miranda", time: "September 28, 2016 at 14:25", photo: UIImage(named: "demo-07.jpeg")!, content: "Lorem ipsum dolor sit amet, consectetuer adipisI elit desco. #demo"),
+	                         PostData(avatarImage: UIImage(named: "Miranda.png")!, username: "Miranda", time: "September 28, 2016 at 14:25", photo: UIImage(named: "demo-08.jpg")!, content: "Lorem ipsum dolor sit amet, consectetuer adipisI elit desco. #demo"),
+	                         PostData(avatarImage: UIImage(named: "Miranda.png")!, username: "Miranda", time: "September 28, 2016 at 14:25", photo: UIImage(named: "demo-09.jpg")!, content: "Lorem ipsum dolor sit amet, consectetuer adipisI elit desco. #demo"),
+	                         PostData(avatarImage: UIImage(named: "Miranda.png")!, username: "Miranda", time: "September 28, 2016 at 14:25", photo: UIImage(named: "demo-10.jpg")!, content: "Lorem ipsum dolor sit amet, consectetuer adipisI elit desco. #demo"),
+	                         PostData(avatarImage: UIImage(named: "Miranda.png")!, username: "Miranda", time: "September 28, 2016 at 14:25", photo: UIImage(named: "demo-11.jpeg")!, content: "Lorem ipsum dolor sit amet, consectetuer adipisI elit desco. #demo"),
+	                         PostData(avatarImage: UIImage(named: "Miranda.png")!, username: "Miranda", time: "September 28, 2016 at 14:25", photo: UIImage(named: "demo-12.jpg")!, content: "Lorem ipsum dolor sit amet, consectetuer adipisI elit desco. #demo"),
+	                         PostData(avatarImage: UIImage(named: "Miranda.png")!, username: "Miranda", time: "September 28, 2016 at 14:25", photo: UIImage(named: "demo-13.jpg")!, content: "Lorem ipsum dolor sit amet, consectetuer adipisI elit desco. #demo"),
+	                         PostData(avatarImage: UIImage(named: "Miranda.png")!, username: "Miranda", time: "September 28, 2016 at 14:25", photo: UIImage(named: "demo-14.jpg")!, content: "Lorem ipsum dolor sit amet, consectetuer adipisI elit desco. #demo"),
+	                         PostData(avatarImage: UIImage(named: "Miranda.png")!, username: "Miranda", time: "September 28, 2016 at 14:25", photo: UIImage(named: "demo-15.jpg")!, content: "Lorem ipsum dolor sit amet, consectetuer adipisI elit desco. #demo"),
+	                         PostData(avatarImage: UIImage(named: "Miranda.png")!, username: "Miranda", time: "September 28, 2016 at 14:25", photo: UIImage(named: "demo-16.jpg")!, content: "Lorem ipsum dolor sit amet, consectetuer adipisI elit desco. #demo"),
+	                         PostData(avatarImage: UIImage(named: "Miranda.png")!, username: "Miranda", time: "September 28, 2016 at 14:25", photo: UIImage(named: "demo-17.jpg")!, content: "Lorem ipsum dolor sit amet, consectetuer adipisI elit desco. #demo"),
+	                         PostData(avatarImage: UIImage(named: "Miranda.png")!, username: "Miranda", time: "September 28, 2016 at 14:25", photo: UIImage(named: "demo-18.jpg")!, content: "Lorem ipsum dolor sit amet, consectetuer adipisI elit desco. #demo")]
+	
+	
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-
+		
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -50,21 +72,23 @@ class MainCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 10
+        return posts.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MainCollectionViewCell
+		
+		let post = posts[indexPath.row]
     
         // Configure the cell
 		// cell.avatarImageView.image = UIImage(named: "Miranda.png")
-		cell.avatarImageView.image = UIImage(named: "demo-05.png")
-		cell.usernameLabel.text = "Miranda Kerr"
-		cell.timeLabel.text = "September 28, 2016 at 14:25"
+		cell.avatarImageView.image = post.avatarImage
+		cell.usernameLabel.text = post.username
+		cell.timeLabel.text = post.time
 		
-		cell.photoImageView.image = UIImage(named: "Miranda.png")
+		cell.photoImageView.image = post.photo
 		// cell.photoImageView.image = UIImage(named: "demo-05.png")
-		cell.postContnetLabel.text = "Lorem ipsum dolor sit amet, consectetuer adipisI elit desco. #demo"
+		cell.postContnetLabel.text = post.content
     
         return cell
     }

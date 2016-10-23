@@ -41,6 +41,7 @@
 		632CB8DC1DBCD811001845F9 /* Emily.png in Resources */ = {isa = PBXBuildFile; fileRef = 632CB8BF1DBCD811001845F9 /* Emily.png */; };
 		632CB8DD1DBCD811001845F9 /* miranda.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 632CB8C01DBCD811001845F9 /* miranda.jpg */; };
 		632CB8DE1DBCD811001845F9 /* Miranda.png in Resources */ = {isa = PBXBuildFile; fileRef = 632CB8C11DBCD811001845F9 /* Miranda.png */; };
+		632CB8E01DBCE774001845F9 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CB8DF1DBCE774001845F9 /* PostData.swift */; };
 		63499DC11DBB453E00D9FCDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63499DC01DBB453E00D9FCDD /* AppDelegate.swift */; };
 		63499DC61DBB453E00D9FCDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63499DC41DBB453E00D9FCDD /* Main.storyboard */; };
 		63499DC81DBB453E00D9FCDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63499DC71DBB453E00D9FCDD /* Assets.xcassets */; };
@@ -102,6 +103,7 @@
 		632CB8BF1DBCD811001845F9 /* Emily.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Emily.png; sourceTree = "<group>"; };
 		632CB8C01DBCD811001845F9 /* miranda.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = miranda.jpg; sourceTree = "<group>"; };
 		632CB8C11DBCD811001845F9 /* Miranda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Miranda.png; sourceTree = "<group>"; };
+		632CB8DF1DBCE774001845F9 /* PostData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		63499DBD1DBB453E00D9FCDD /* Howhow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howhow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63499DC01DBB453E00D9FCDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63499DC51DBB453E00D9FCDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				632CB8A01DBCD45B001845F9 /* ProfilePageViewController.swift */,
+				632CB8DF1DBCE774001845F9 /* PostData.swift */,
 				63BBE5FB1DBC6F2C00478554 /* MainCollectionViewController.swift */,
 				63499DC01DBB453E00D9FCDD /* AppDelegate.swift */,
 				63499DC41DBB453E00D9FCDD /* Main.storyboard */,
@@ -417,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632CB8E01DBCE774001845F9 /* PostData.swift in Sources */,
 				63499DC11DBB453E00D9FCDD /* AppDelegate.swift in Sources */,
 				632CB8971DBC8DB4001845F9 /* MainCollectionViewCell.swift in Sources */,
 				63BBE5FC1DBC6F2C00478554 /* MainCollectionViewController.swift in Sources */,
