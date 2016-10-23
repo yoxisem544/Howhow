@@ -10,6 +10,15 @@ import UIKit
 
 class MainCollectionViewCell: UICollectionViewCell {
 	
+	@IBOutlet weak var avatarImageView: UIImageView!
+	
+	@IBOutlet weak var usernameLabel: UILabel!
+	@IBOutlet weak var timeLabel: UILabel!
+	
+	@IBOutlet weak var photoImageView: UIImageView!
+	
+	@IBOutlet weak var postContnetLabel: UILabel!
+	
 	override func awakeFromNib() {
 		super.awakeFromNib()
 		
