@@ -30,10 +30,10 @@
             </objects>
             <point key="canvasLocation" x="-590" y="105"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile Page View Controller-->
         <scene sceneID="Rx6-DI-Kzi">
             <objects>
-                <viewController id="ovc-MS-R6U" sceneMemberID="viewController">
+                <viewController id="ovc-MS-R6U" customClass="ProfilePageViewController" customModule="Howhow" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QXm-Ck-iaO"/>
                         <viewControllerLayoutGuide type="bottom" id="dTs-cf-Yog"/>
@@ -45,7 +45,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gy9-5P-lik">
                                 <rect key="frame" x="0.0" y="31" width="375" height="236"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gLo-5L-48o">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gLo-5L-48o">
                                         <rect key="frame" x="142" y="20" width="90" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="90" id="MLe-5C-daz"/>
@@ -82,20 +82,20 @@
                                         <color key="textColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPt-62-Y1U">
-                                        <rect key="frame" x="172" y="216" width="31" height="14.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="follower" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPt-62-Y1U">
+                                        <rect key="frame" x="165" y="216" width="45" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.69411764705882351" green="0.69411764705882351" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="El9-Bn-oNR">
-                                        <rect key="frame" x="79" y="216" width="31" height="14.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="posts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="El9-Bn-oNR">
+                                        <rect key="frame" x="78" y="216" width="32" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.69411764710000001" green="0.69411764710000001" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2C-9G-y1h">
-                                        <rect key="frame" x="266" y="216" width="31" height="14.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="following" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2C-9G-y1h">
+                                        <rect key="frame" x="256" y="216" width="51" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.69411764710000001" green="0.69411764710000001" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -148,6 +148,9 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6w3-4f-MaJ">
                                         <rect key="frame" x="316" y="5" width="51" height="31"/>
                                         <color key="onTintColor" red="0.28627450980392155" green="0.83529411764705885" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="notificationSwitchValueChanged:" destination="ovc-MS-R6U" eventType="valueChanged" id="6if-Jp-gDp"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -172,6 +175,16 @@
                             <constraint firstItem="d7r-gf-zq9" firstAttribute="leading" secondItem="ehY-Iv-iOT" secondAttribute="leading" id="sON-NJ-Txi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="avatarImageView" destination="gLo-5L-48o" id="ezG-xG-vah"/>
+                        <outlet property="followersCountLabel" destination="FyU-xD-I20" id="TyV-2w-zyJ"/>
+                        <outlet property="followingCountLabel" destination="2DM-Fc-xMM" id="kHU-q2-Bap"/>
+                        <outlet property="notificationLabel" destination="ieK-eB-XHo" id="M21-d4-f1v"/>
+                        <outlet property="notificationSwitch" destination="6w3-4f-MaJ" id="1UP-Re-V4W"/>
+                        <outlet property="postsCountLabel" destination="8i8-8C-gfD" id="1vc-s6-SJv"/>
+                        <outlet property="userEmailLabel" destination="CRl-yh-9kX" id="nVp-Mv-Y9r"/>
+                        <outlet property="usernameLabel" destination="oMK-pb-Rhc" id="Dbk-rD-f45"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bgv-RJ-PwF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
