@@ -39,14 +39,24 @@ class ProfilePageViewController: UIViewController {
 		followersCountLabel.text = "2000"
 		followingCountLabel.text = "168"
 		
-		notificationLabel.text = "on"
-		notificationSwitch.isOn = true
+		let ud = UserDefaults.standard
+		let isOn = ud.bool(forKey: "notification key")
+		notificationSwitch.isOn = isOn
 		
-		
+		if notificationSwitch.isOn {
+			// 打開的
+			notificationLabel.text = "on"
+		} else {
+			// 關閉的
+			notificationLabel.text = "off"
+		}
     }
 
 	@IBAction func notificationSwitchValueChanged(_ sender: UISwitch) {
 		if sender == notificationSwitch {
+			let ud = UserDefaults.standard
+			ud.set(notificationSwitch.isOn, forKey: "notification key")
+			ud.synchronize()
 			if notificationSwitch.isOn {
 				// 打開的
 				notificationLabel.text = "on"
