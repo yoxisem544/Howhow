@@ -53,10 +53,17 @@ class MainCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MainCollectionViewCell
     
         // Configure the cell
+		// cell.avatarImageView.image = UIImage(named: "Miranda.png")
+		cell.avatarImageView.image = UIImage(named: "demo-05.png")
+		cell.usernameLabel.text = "Miranda Kerr"
+		cell.timeLabel.text = "September 28, 2016 at 14:25"
 		
+		cell.photoImageView.image = UIImage(named: "Miranda.png")
+		// cell.photoImageView.image = UIImage(named: "demo-05.png")
+		cell.postContnetLabel.text = "Lorem ipsum dolor sit amet, consectetuer adipisI elit desco. #demo"
     
         return cell
     }

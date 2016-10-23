@@ -23,6 +23,10 @@ class MainCollectionViewCell: UICollectionViewCell {
 		super.awakeFromNib()
 		
 		// configuration
+		avatarImageView.layer.cornerRadius = avatarImageView.bounds.width / 2
+		avatarImageView.clipsToBounds = true
+		
+		photoImageView.clipsToBounds = true
 	}
 	
 }
