@@ -51,8 +51,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="318" height="249"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0kH-cd-vYM">
-                                            <rect key="frame" x="8" y="8" width="30" height="30"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0kH-cd-vYM">
+                                            <rect key="frame" x="5" y="7" width="30" height="30"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="30" id="1Ii-nI-FoU"/>
                                                 <constraint firstAttribute="height" constant="30" id="lFQ-LR-5K3"/>
@@ -60,6 +61,10 @@
                                         </imageView>
                                     </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="0kH-cd-vYM" firstAttribute="top" secondItem="CAH-dO-f53" secondAttribute="top" constant="7" id="aZV-E1-bnY"/>
+                                    <constraint firstItem="0kH-cd-vYM" firstAttribute="leading" secondItem="CAH-dO-f53" secondAttribute="leading" constant="5" id="c1n-Ar-jhS"/>
+                                </constraints>
                             </collectionViewCell>
                         </cells>
                         <connections>
