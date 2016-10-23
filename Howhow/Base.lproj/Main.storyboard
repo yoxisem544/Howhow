@@ -63,6 +63,12 @@
                                         <color key="textColor" red="0.76078431372549016" green="0.76078431372549016" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyU-xD-I20">
+                                        <rect key="frame" x="166" y="190.5" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -70,8 +76,10 @@
                                     <constraint firstItem="gLo-5L-48o" firstAttribute="top" secondItem="gy9-5P-lik" secondAttribute="top" constant="20" id="Afk-DH-6KG"/>
                                     <constraint firstAttribute="height" constant="236" id="PDO-mg-hDb"/>
                                     <constraint firstItem="oMK-pb-Rhc" firstAttribute="top" secondItem="gLo-5L-48o" secondAttribute="bottom" constant="9" id="Xrb-vi-yZQ"/>
+                                    <constraint firstItem="FyU-xD-I20" firstAttribute="top" secondItem="CRl-yh-9kX" secondAttribute="bottom" constant="30" id="agf-Ki-BvI"/>
                                     <constraint firstItem="CRl-yh-9kX" firstAttribute="centerX" secondItem="oMK-pb-Rhc" secondAttribute="centerX" id="fLO-eZ-KNS"/>
                                     <constraint firstItem="gLo-5L-48o" firstAttribute="centerX" secondItem="gy9-5P-lik" secondAttribute="centerX" id="vOn-fF-o8W"/>
+                                    <constraint firstItem="FyU-xD-I20" firstAttribute="centerX" secondItem="CRl-yh-9kX" secondAttribute="centerX" id="x1J-mN-etb"/>
                                     <constraint firstItem="oMK-pb-Rhc" firstAttribute="centerX" secondItem="gLo-5L-48o" secondAttribute="centerX" id="y5A-xJ-55Z"/>
                                 </constraints>
                             </view>
