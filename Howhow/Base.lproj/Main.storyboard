@@ -145,9 +145,15 @@
                                         <color key="textColor" red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6w3-4f-MaJ">
+                                        <rect key="frame" x="316" y="5" width="51" height="31"/>
+                                        <color key="onTintColor" red="0.28627450980392155" green="0.83529411764705885" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </switch>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6w3-4f-MaJ" secondAttribute="trailing" constant="10" id="33Q-AX-SAR"/>
+                                    <constraint firstItem="6w3-4f-MaJ" firstAttribute="centerY" secondItem="d7r-gf-zq9" secondAttribute="centerY" id="83y-Eq-jgN"/>
                                     <constraint firstAttribute="height" constant="40" id="DTk-iG-4pm"/>
                                     <constraint firstItem="ieK-eB-XHo" firstAttribute="leading" secondItem="eij-3L-fUT" secondAttribute="trailing" constant="11" id="hCP-ZK-raM"/>
                                     <constraint firstItem="eij-3L-fUT" firstAttribute="leading" secondItem="d7r-gf-zq9" secondAttribute="leading" constant="14" id="nHi-yP-tHd"/>
