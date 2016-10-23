@@ -12,13 +12,14 @@ private let reuseIdentifier = "Cell"
 
 class MainCollectionViewController: UICollectionViewController {
 
+	@IBOutlet weak var MainFlowLayout: UICollectionViewFlowLayout!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
-		
+		MainFlowLayout.estimatedItemSize = MainFlowLayout.itemSize
 
         // Do any additional setup after loading the view.
     }
