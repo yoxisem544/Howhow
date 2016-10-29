@@ -85,7 +85,13 @@ class CreatePostViewController: UIViewController {
 extension CreatePostViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 	
 	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-		<#code#>
+		let image = info[UIImagePickerControllerOriginalImage] as? UIImage
+		photoImageView.image = image
+		picker.dismiss(animated: true, completion: nil)
+	}
+	
+	func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+		picker.dismiss(animated: true, completion: nil)
 	}
 	
 }
