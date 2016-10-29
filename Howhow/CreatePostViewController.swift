@@ -20,6 +20,7 @@ class CreatePostViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+		contentTextView.text = ""
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,7 +33,28 @@ class CreatePostViewController: UIViewController {
 	}
 	
 	@IBAction func doneButtonClicked(_ sender: Any) {
+		let avatarImage = UIImage(named: "Emily-kinney-2.jpg")!
+		let username = "Emily"
+		let time = "September 28, 2016 16:00"
+		guard let photo = photoImageView.image else {
+			alert(body: "need photo!")
+			return
+		}
+		guard let content = contentTextView.text, !content.isEmpty else {
+			alert(body: "need content!")
+			return
+		}
+		
+		let postData = PostData(avatarImage: avatarImage, username: username, time: time, photo: photo, content: content)
+		print(postData)
 		dismiss(animated: true, completion: nil)
+	}
+	
+	func alert(body: String) {
+		let alert = UIAlertController(title: "Error", message: body, preferredStyle: UIAlertControllerStyle.alert)
+		let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+		alert.addAction(ok)
+		present(alert, animated: true, completion: nil)
 	}
 	
 	@IBAction func openCameraButtonClicked(_ sender: Any) {
