@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Photos
 
 class CreatePostViewController: UIViewController {
 
@@ -35,6 +36,7 @@ class CreatePostViewController: UIViewController {
 	}
 	
 	@IBAction func openCameraButtonClicked(_ sender: Any) {
+		openPhotoLibrary()
 	}
 
     /*
@@ -46,5 +48,88 @@ class CreatePostViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+	
+	func openPhotoLibrary() {
+		// check permission
+		if PHPhotoLibrary.authorizationStatus() == .authorized {
+			// open photo library
+			let imagePicker = UIImagePickerController()
+			imagePicker.delegate = self
+			imagePicker.sourceType = .photoLibrary
+			self.present(imagePicker, animated: true, completion: nil)
+		} else {
+			// need permission
+			needPermission()
+		}
+		
+	}
+	
+	func needPermission() {
+		if PHPhotoLibrary.authorizationStatus() == .notDetermined {
+			PHPhotoLibrary.requestAuthorization({ (status) in
+				self.openPhotoLibrary()
+			})
+		} else {
+			// user dont give us permission
+			let url = URL(string: UIApplicationOpenSettingsURLString)!
+			UIApplication.shared.open(url, options: [:], completionHandler: nil)
+		}
+	}
 
+	
+	
+
+	
 }
+
+extension CreatePostViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+	
+	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+		<#code#>
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
