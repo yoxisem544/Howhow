@@ -27,9 +27,11 @@ class CreatePostViewController: UIViewController {
     }
     
 	@IBAction func cancelButtonClicked(_ sender: Any) {
+		dismiss(animated: true, completion: nil)
 	}
 	
 	@IBAction func doneButtonClicked(_ sender: Any) {
+		dismiss(animated: true, completion: nil)
 	}
 	
 	@IBAction func openCameraButtonClicked(_ sender: Any) {
