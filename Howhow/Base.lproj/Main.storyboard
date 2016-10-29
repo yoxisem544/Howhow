@@ -284,6 +284,11 @@
                                 <segue destination="ovc-MS-R6U" kind="show" identifier="to profile page seuge" id="Tsd-R7-xxO"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="CreatePostIcon" id="9xg-JJ-Ybn">
+                            <connections>
+                                <segue destination="9AW-b0-gAa" kind="presentation" id="X3x-GP-DV2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="MainFlowLayout" destination="Gp0-vn-5wE" id="PwJ-gA-GcZ"/>
@@ -293,10 +298,10 @@
             </objects>
             <point key="canvasLocation" x="240.80000000000001" y="104.7976011994003"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Post View Controller-->
         <scene sceneID="l51-2v-rxn">
             <objects>
-                <viewController id="9AW-b0-gAa" sceneMemberID="viewController">
+                <viewController id="9AW-b0-gAa" customClass="CreatePostViewController" customModule="Howhow" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZDu-aV-3aw"/>
                         <viewControllerLayoutGuide type="bottom" id="exp-EF-huC"/>
@@ -371,6 +376,7 @@
     <resources>
         <image name="CameraIcon" width="30" height="30"/>
         <image name="CancelButton" width="24" height="24"/>
+        <image name="CreatePostIcon" width="24" height="24"/>
         <image name="ProfileIcon" width="14" height="16"/>
         <image name="noface.png" width="14" height="14"/>
     </resources>
