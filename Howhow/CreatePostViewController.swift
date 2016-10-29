@@ -10,6 +10,11 @@ import UIKit
 
 class CreatePostViewController: UIViewController {
 
+	@IBOutlet weak var contentTextView: UITextView!
+	
+	@IBOutlet weak var photoImageView: UIImageView!
+	
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +26,14 @@ class CreatePostViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+	@IBAction func cancelButtonClicked(_ sender: Any) {
+	}
+	
+	@IBAction func doneButtonClicked(_ sender: Any) {
+	}
+	
+	@IBAction func openCameraButtonClicked(_ sender: Any) {
+	}
 
     /*
     // MARK: - Navigation

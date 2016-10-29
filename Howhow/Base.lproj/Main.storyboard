@@ -207,7 +207,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="CAH-dO-f53" customClass="MainCollectionViewCell" customModule="Howhow" customModuleProvider="target">
-                                <rect key="frame" x="28.5" y="0.0" width="318" height="369"/>
+                                <rect key="frame" x="29" y="0.0" width="318" height="369"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="318" height="369"/>
@@ -322,8 +322,16 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Post" id="8cn-B0-z7D">
-                                        <barButtonItem key="leftBarButtonItem" image="CancelButton" id="eSg-da-FeS"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Done" id="CTR-C5-cci"/>
+                                        <barButtonItem key="leftBarButtonItem" image="CancelButton" id="eSg-da-FeS">
+                                            <connections>
+                                                <action selector="cancelButtonClicked:" destination="9AW-b0-gAa" id="xpJ-di-nNQ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Done" id="CTR-C5-cci">
+                                            <connections>
+                                                <action selector="doneButtonClicked:" destination="9AW-b0-gAa" id="3Bv-TP-WMA"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -350,6 +358,9 @@
                                     <constraint firstAttribute="width" constant="30" id="z9g-Tn-DhL"/>
                                 </constraints>
                                 <state key="normal" image="CameraIcon"/>
+                                <connections>
+                                    <action selector="openCameraButtonClicked:" destination="9AW-b0-gAa" eventType="touchUpInside" id="Jpo-BY-mTj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -367,6 +378,10 @@
                             <constraint firstItem="C3d-M2-rlT" firstAttribute="leading" secondItem="qba-lW-74Y" secondAttribute="leading" id="zmg-ms-xKI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentTextView" destination="C3d-M2-rlT" id="ZTE-dI-HyT"/>
+                        <outlet property="photoImageView" destination="EEl-A2-GeB" id="WDd-ZV-vNT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DTb-ax-FFT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
