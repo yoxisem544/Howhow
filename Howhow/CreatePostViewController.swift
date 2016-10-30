@@ -19,6 +19,8 @@ class CreatePostViewController: UIViewController {
 	
 	@IBOutlet weak var photoImageView: UIImageView!
 	
+	var delegate: CreatePostViewControllerDelegate?
+	
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +53,7 @@ class CreatePostViewController: UIViewController {
 		
 		let postData = PostData(avatarImage: avatarImage, username: username, time: time, photo: photo, content: content)
 		print(postData)
+		delegate?.createPostViewController(didFinishCreate: postData)
 		dismiss(animated: true, completion: nil)
 	}
 	

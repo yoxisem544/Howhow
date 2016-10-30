@@ -59,6 +59,10 @@ class MainCollectionViewController: UICollectionViewController {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
 		print(segue.identifier)
+		if segue.identifier == "to create post segue" {
+			let vc = segue.destination as? CreatePostViewController
+			vc?.delegate = self
+		}
     }
 
 
@@ -125,3 +129,24 @@ class MainCollectionViewController: UICollectionViewController {
     */
 
 }
+
+extension MainCollectionViewController : CreatePostViewControllerDelegate {
+	
+	func createPostViewController(didFinishCreate post: PostData) {
+		posts.insert(post, at: 0)
+		collectionView?.reloadData()
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+

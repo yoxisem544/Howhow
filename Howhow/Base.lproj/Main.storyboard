@@ -286,7 +286,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="CreatePostIcon" id="9xg-JJ-Ybn">
                             <connections>
-                                <segue destination="9AW-b0-gAa" kind="presentation" id="X3x-GP-DV2"/>
+                                <segue destination="9AW-b0-gAa" kind="presentation" identifier="to create post segue" id="X3x-GP-DV2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
