@@ -9,6 +9,10 @@
 import UIKit
 import Photos
 
+protocol CreatePostViewControllerDelegate {
+	func createPostViewController(didFinishCreate post: PostData)
+}
+
 class CreatePostViewController: UIViewController {
 
 	@IBOutlet weak var contentTextView: UITextView!
