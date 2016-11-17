@@ -18,6 +18,8 @@ class MainCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var photoImageView: UIImageView!
 	
 	@IBOutlet weak var postContnetLabel: UILabel!
+    
+    @IBOutlet weak var likeButton: DOFavoriteButton!
 	
 	override func awakeFromNib() {
 		super.awakeFromNib()
@@ -27,6 +29,18 @@ class MainCollectionViewCell: UICollectionViewCell {
 		avatarImageView.clipsToBounds = true
 		
 		photoImageView.clipsToBounds = true
+        
+        likeButton.addTarget(self, action: #selector(tapped(sender:)), for: .touchUpInside)
 	}
+    
+    func tapped(sender: DOFavoriteButton) {
+        if sender.isSelected {
+            // deselect
+            sender.deselect()
+        } else {
+            // select with animation
+            sender.select()
+        }
+    }
 	
 }

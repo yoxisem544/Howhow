@@ -49,6 +49,11 @@
 		63499DD61DBB453F00D9FCDD /* HowhowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63499DD51DBB453F00D9FCDD /* HowhowTests.swift */; };
 		63499DE11DBB453F00D9FCDD /* HowhowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63499DE01DBB453F00D9FCDD /* HowhowUITests.swift */; };
 		6390DC6D1DC47D2C00B28156 /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6390DC6C1DC47D2C00B28156 /* CreatePostViewController.swift */; };
+		6399FA141DDDEA74000D7377 /* DOFavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6399FA0F1DDDEA74000D7377 /* DOFavoriteButton.swift */; };
+		6399FA151DDDEA74000D7377 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 6399FA101DDDEA74000D7377 /* heart.png */; };
+		6399FA161DDDEA74000D7377 /* like.png in Resources */ = {isa = PBXBuildFile; fileRef = 6399FA111DDDEA74000D7377 /* like.png */; };
+		6399FA171DDDEA74000D7377 /* smile.png in Resources */ = {isa = PBXBuildFile; fileRef = 6399FA121DDDEA74000D7377 /* smile.png */; };
+		6399FA181DDDEA74000D7377 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 6399FA131DDDEA74000D7377 /* star.png */; };
 		63BBE5FC1DBC6F2C00478554 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BBE5FB1DBC6F2C00478554 /* MainCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +123,11 @@
 		63499DE01DBB453F00D9FCDD /* HowhowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowhowUITests.swift; sourceTree = "<group>"; };
 		63499DE21DBB453F00D9FCDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6390DC6C1DC47D2C00B28156 /* CreatePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		6399FA0F1DDDEA74000D7377 /* DOFavoriteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOFavoriteButton.swift; sourceTree = "<group>"; };
+		6399FA101DDDEA74000D7377 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		6399FA111DDDEA74000D7377 /* like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like.png; sourceTree = "<group>"; };
+		6399FA121DDDEA74000D7377 /* smile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smile.png; sourceTree = "<group>"; };
+		6399FA131DDDEA74000D7377 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		63BBE5FB1DBC6F2C00478554 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -223,6 +233,11 @@
 				632CB8DF1DBCE774001845F9 /* PostData.swift */,
 				63BBE5FB1DBC6F2C00478554 /* MainCollectionViewController.swift */,
 				63499DC01DBB453E00D9FCDD /* AppDelegate.swift */,
+				6399FA0F1DDDEA74000D7377 /* DOFavoriteButton.swift */,
+				6399FA101DDDEA74000D7377 /* heart.png */,
+				6399FA111DDDEA74000D7377 /* like.png */,
+				6399FA121DDDEA74000D7377 /* smile.png */,
+				6399FA131DDDEA74000D7377 /* star.png */,
 				63499DC41DBB453E00D9FCDD /* Main.storyboard */,
 				632CB8961DBC8DB4001845F9 /* MainCollectionViewCell.swift */,
 				63499DC71DBB453E00D9FCDD /* Assets.xcassets */,
@@ -325,6 +340,7 @@
 				TargetAttributes = {
 					63499DBC1DBB453E00D9FCDD = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = TPKS6H339C;
 						ProvisioningStyle = Automatic;
 					};
 					63499DD01DBB453F00D9FCDD = {
@@ -370,11 +386,13 @@
 				632CB8C41DBCD811001845F9 /* demo-03.jpg in Resources */,
 				632CB8C51DBCD811001845F9 /* demo-04.jpg in Resources */,
 				632CB8CC1DBCD811001845F9 /* demo-11.jpeg in Resources */,
+				6399FA171DDDEA74000D7377 /* smile.png in Resources */,
 				632CB8CF1DBCD811001845F9 /* demo-14.jpg in Resources */,
 				632CB8C21DBCD811001845F9 /* demo-01.jpg in Resources */,
 				632CB8D01DBCD811001845F9 /* demo-15.jpg in Resources */,
 				632CB89F1DBCA5B1001845F9 /* noface.png in Resources */,
 				632CB8D11DBCD811001845F9 /* demo-16.jpg in Resources */,
+				6399FA161DDDEA74000D7377 /* like.png in Resources */,
 				632CB8CD1DBCD811001845F9 /* demo-12.jpg in Resources */,
 				632CB89B1DBC918A001845F9 /* demo-05.png in Resources */,
 				632CB8CA1DBCD811001845F9 /* demo-09.jpg in Resources */,
@@ -392,10 +410,12 @@
 				632CB8C61DBCD811001845F9 /* demo-05.jpg in Resources */,
 				632CB8C31DBCD811001845F9 /* demo-02.jpg in Resources */,
 				632CB8D81DBCD811001845F9 /* ad-demo-05.jpg in Resources */,
+				6399FA151DDDEA74000D7377 /* heart.png in Resources */,
 				632CB8CB1DBCD811001845F9 /* demo-10.jpg in Resources */,
 				632CB8DB1DBCD811001845F9 /* Emily-kinney.jpg in Resources */,
 				632CB8D41DBCD811001845F9 /* ad-demo-01.jpg in Resources */,
 				632CB8D51DBCD811001845F9 /* ad-demo-02.jpg in Resources */,
+				6399FA181DDDEA74000D7377 /* star.png in Resources */,
 				632CB8DA1DBCD811001845F9 /* Emily-kinney-2.jpg in Resources */,
 				632CB8C71DBCD811001845F9 /* demo-06.jpg in Resources */,
 				63499DC61DBB453E00D9FCDD /* Main.storyboard in Resources */,
@@ -428,6 +448,7 @@
 				632CB8971DBC8DB4001845F9 /* MainCollectionViewCell.swift in Sources */,
 				63BBE5FC1DBC6F2C00478554 /* MainCollectionViewController.swift in Sources */,
 				6390DC6D1DC47D2C00B28156 /* CreatePostViewController.swift in Sources */,
+				6399FA141DDDEA74000D7377 /* DOFavoriteButton.swift in Sources */,
 				632CB8A11DBCD45B001845F9 /* ProfilePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -578,6 +599,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TPKS6H339C;
 				INFOPLIST_FILE = Howhow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.david.Howhow;
@@ -590,6 +612,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TPKS6H339C;
 				INFOPLIST_FILE = Howhow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.david.Howhow;
